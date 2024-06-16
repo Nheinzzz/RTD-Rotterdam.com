@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - RTD Rotterdam</title>
+    <style>
+        /* Algemene stijlen */
+        :root {
+            --group-width: 70%;
+            --group-max-width: 1650px; 
+            --group-height: 62px;
+            --group-font-size: 45px;
+            --group-bg-color: rgba(0, 0, 0, 0);
+            --group-border-radius: 0px;
+            --group-border-width: 0px;
+            --group-border-color: rgba(0, 0, 0, 0);
+            --header-font-size: 40px; /* Nieuwe variabele voor header-tekstgrootte */
+            --header-font-family: Arial
+        }
+        :root {
+            --group-width2: 80%;
+            --group-max-width2: 1650px; 
+            --group-height2: 60%;
+            --group-font-size2: 42px;
+            --group-bg-color2: rgba(0, 0, 0, 0);
+            --group-border-radius2: 5px;
+            --group-border-width2: 2px;
+            --group-border-color2: rgba(255, 255, 255, 0);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000000;
+            background-image: url('ADVERTENTIEBORDINKOM.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden; /* Disable vertical scrolling */
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+            background-color: #000000;
+            font-size: var(--header-font-size); /* Gebruik de variabele voor header-tekstgrootte */
+        }
+
+        header img {
+            height: 120px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 120px 150px;
+            background-color: #44444400;
+            border-radius: 2px;
+        }
+
+        nav a:hover {
+            background-color: #55555500;
+        }
+
+        .main-content {
+            position: fixed; /* Make the main content fixed */
+            width: 100%;
+            height: calc(100vh - 80px);
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: overlay;
+            text-align: center;
+            padding: 0px;
+        }
+        .group-box2 {
+            position: absolute;
+            width: var(--group-width);
+            max-width: var(--group-max-width);
+            height: var(--group-height);
+            left: 50%;
+            font-family: Arial, sans-serif;
+            transform: translateX(-50%);
+            background-color: var(--group-bg-color);
+            border-radius: var(--group-border-radius);
+            border: var(--group-border-width) solid var(--group-border-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .group-box {
+            position: absolute;
+            width: var(--group-width);
+            max-width: var(--group-max-width);
+            height: var(--group-height);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--group-bg-color);
+            border-radius: var(--group-border-radius);
+            border: var(--group-border-width) solid var(--group-border-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            text-align: center;
+        }
+        .group-box2 a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: var(--group-height);
+            font-size: var(--group-font-size);
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border-radius: inherit;
+        }
+
+        .group-box a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: var(--group-height);
+            font-size: var(--group-font-size);
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border-radius: inherit;
+        }
+
+        .group-box a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .settings {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #000000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        .settings:hover {
+            background-color: #555;
+        }
+
+        .settings span {
+            font-size: 1.5rem;
+        }
+
+        /* Specific positioning for group names */
+        #group1 { top: 200%; }
+        #group2 { top: 64%; }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="RTD.png" alt="RTD Logo">
+    <nav>
+        <a href="Groepen.html">Groepen</a>
+        <a href="Sollicitaties.html">Sollicitaties</a>
+        <a href="Donatie.html">Donatie Voertuigen</a>
+        <a href="Vliegbewijs.html">Vliegbewijs halen</a>
+        <a href="Advertentiebord.html">Advertentie Bord</a>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div id="group1" class="group-box">
+        <a href="https://www.roblox.com/groups/123456/groep-naam"target="_blank">d</a>
+    </div>
+    <div id="group2" class="group-box2">
+        <a href="Groepen.html"target="_blank"></a>
+</div>
+
+<footer>
+    <p>&copy; 2024 RTD Rotterdam. Alle rechten voorbehouden.</p>
+</footer>
+
+<div class="settings" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });">
+    <span>&#9881;</span>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
